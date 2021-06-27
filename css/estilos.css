@@ -1,5 +1,6 @@
 /* Import de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 /* Variables */
 :root {
@@ -36,6 +37,7 @@ strong {color: var(--resalte);}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--fondo);
+    background-image: url(../img/background.jpg);
 }
 
 h1 {
@@ -70,7 +72,7 @@ header .container {
 .logo, .menu{
     display: flex;
     align-items: center;
-    gap: 13px;
+    gap: 15px;
 }
 
 .logo-pizza {color: var(--logo);}
@@ -91,7 +93,7 @@ main .container {
 }
 
 .card {
-    border-radius: 5px;
+    border-radius: 10px;
     height:350px;
     width:490px;
     box-shadow: 0 4px 4px var(--sombra);
@@ -107,7 +109,8 @@ main .container {
 }
 
 .podio {
-    background-color: var(--resalte);
+    background-color: rgba(255,255,255,0.5);
+ 
 }
 
 .podio h2 {
