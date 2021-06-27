@@ -1,0 +1,158 @@
+/* Import de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+    --fondo-barra: #222222; 
+    --titulo: #FC200C;
+    --resalte: #FFFFFF;
+    --logo: #39B24A;
+    --link: #F3F3F3;
+    --fondo: #E5E5E5;
+    --sombra: rgba(0,0,0,0.25);
+    --fondo-img: #facf44;
+    --ancho-maximo: 1024px;
+}
+
+/* Propiedades generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--link);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+ul {list-style-type: none;}
+
+strong {color: var(--resalte);}
+
+
+/* Etiquetas */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--fondo);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--titulo);
+}
+
+/*--- Header ---------------------*/
+
+header {
+    background-color: var(--fondo-barra);
+    box-shadow: 0 4px 4px var(--sombra); 
+}
+
+header .container {
+    display: flex;
+    max-width: var(--ancho-maximo);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* Logo */
+
+.logo, .menu{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.logo-pizza {color: var(--logo);}
+.logo-and {color: var(--resalte);}
+.logo-front {color: var(--titulo);}
+
+
+/*--- Main ----------------------*/
+
+main .container {
+    display: flex;
+    max-width: var(--ancho-maximo);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 35px 20px;
+    gap: 5px;
+}
+
+.card {
+    border-radius: 5px;
+    height:350px;
+    width:490px;
+    box-shadow: 0 4px 4px var(--sombra);
+}
+
+.promo {
+    background: var(--fondo-img) url(../img/delivery.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.promo h2{
+    padding:20px;
+}
+
+.podio {
+    background-color: var(--resalte);
+}
+
+.podio h2 {
+    text-align: center;
+    padding: 26px;
+}
+
+.podio h3 {
+    padding: 20px 0;
+}
+
+.podio li {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.podio .container {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+
+/*--- Footer --------------------*/
+footer {
+    background-color: var(--fondo-barra);
+}
+
+footer .container {
+    display: flex;
+    max-width: var(--ancho-maximo);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.menu-footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+footer .logo p {
+    font-size: 20px;
+    font-weight: bold;
+}
